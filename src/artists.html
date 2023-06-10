@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/uzi4nhr.css">
-  <link href="./style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <title>Arists</title>
 </head>
 
 <body>
-
   <nav class="bg-white">
     <div class="max-w-[1540px] flex h-[80px] flex-wrap items-center justify-between mx-auto p-4">
       <a href="" class="flex items-center">
-        <img src="./public/images/glob/primary.svg" class="h-6 mr-3" alt="Flowbite Logo" />
+        <img src="../public/images/glob/primary.svg" class="h-6 mr-3" alt="Flowbite Logo" />
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
         class="menu-btn inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
@@ -31,7 +31,7 @@
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
           <li>
-            <a href="./artists.html" class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
+            <a href="#" class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
               aria-current="page">Artists</a>
           </li>
           <li>
@@ -59,39 +59,61 @@
     </div>
   </nav>
 
-  <section class="py-10 lg:h-screen">
-    <div class='w-full flex flex-col justify-between'>
-      <div class='grid md:grid-cols-2 max-w-[1540px] p-4 m-auto'>
-        <div class='flex flex-col justify-between  w-full'>
-          <div>
-            <p class="text-base font-bold">Current</p>
-            <p class="text-base leading-10">23 April — 14 May, 2023</p>
-          </div>
-          <div>
-            <h1 class='text-2xl pt-5 max-w-[450px] font-thin'>A somewhat lengthy exhibition name</h1>
-            <p class='text-lg font-light lg:py-5 py-10'>Artist name</p>
-          </div>
-          <div class="lg:py-0 lg:block hidden py-5">
-            <button class='text-lg flex'>READ MORE &emsp; <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px]"
-                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-              </svg></button>
-          </div>
-
+  <section class="py-10">
+    <div class='w-full'>
+      <div class='max-w-[1540px] p-4 m-auto'>
+        <div class='w-full text-left'>
+          <p class='text-2xl font-light py-10'>Represented artists</p>
         </div>
-        <div>
-          <img class='w-full' src='./public/images/main/header.svg' alt="/" />
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-between gap-8 w-full">
+          <a href="./artist1.html">
+            <img class="w-full" src="../public/images/aritsts/img4.svg">
+            <p class="py-6 text-lg text-clr_primary font-normal">Arjan Pregl</p>
+          </a>
+          <div>
+            <img class="w-full" src="../public/images/aritsts/img1.svg">
+            <p class="py-6 text-lg text-clr_primary font-normal">Sašo Vrabič</p>
+          </div>
+          <div>
+            <img class="w-full" src="../public/images/aritsts/img2.svg">
+            <p class="py-6 text-lg text-clr_primary font-normal">Tina Dobrajc</p>
+          </div>
+          <div>
+            <img class="w-full" src="../public/images/aritsts/img3.svg">
+            <p class="py-6 text-lg text-clr_primary font-normal">Mito Gegič</p>
+          </div>
         </div>
       </div>
-      <div class="lg:py-0 lg:hidden block  p-5">
-        <button class='text-base flex'>READ MORE &emsp;
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px]"
-            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-          </svg>
-        </button>
+      <div class='grid md:grid-cols-2 grid-cols-1 max-w-[1540px] sm:mt-20 p-4 m-auto'>
+        <div>
+          <h1 class='text-2xl py-5 max-w-[450px] font-thin'>Collaborations</h1>
+        </div>
+        <div class="grid sm:grid-cols-2 grid-cols-1 py-8">
+          <ul class="text-lg space-y-2 font-light">
+            <li>Laibach</li>
+            <li>IRWIN</li>
+            <li>Miha Štrukelj</li>
+            <li>Metka Krašovec</li>
+            <li>Anton Gojmir Kos</li>
+            <li>Matej Čepin</li>
+            <li>Sergej Kapus</li>
+            <li>Sara Bezovšek</li>
+            <li>Duša Jesih</li>
+            <li>Joni Zakonjšek</li>
+          </ul>
+          <ul class="text-lg font-light space-y-2 sm:block hidden">
+            <li>Jože Slak</li>
+            <li>Jiři Bezlaj</li>
+            <li>Damijan Kracina</li>
+            <li>Ira Marušič</li>
+            <li>Mitja Ficko</li>
+            <li>Aleksij Kobal</li>
+            <li>Igor Banfi</li>
+            <li>Ulla Žibert</li>
+            <li>Janja Kosi</li>
+            <li>Dvorščak Patrik</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -103,7 +125,7 @@
       <div class="md:flex py-4 md:justify-between">
         <div class="w-full mb-6 md:mb-0">
           <a href="#" class="flex items-center">
-            <img src="./public/images/primary.svg" class="h-6 mr-3" alt="Flowbite Logo" />
+            <img src="../public/images/glob/primary.svg" class="h-6 mr-3" alt="Flowbite Logo" />
           </a>
           <h1 class="text-xl py-5 text-clr_monochrome_dark">Zavod Y Gallery</h1>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

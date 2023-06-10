@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*.{html,cjs}"],
+  content: ["./*.{html, cjs}", './src/*.{html, cjs}'],
   theme: {
     extend: {
       colors: {
@@ -14,11 +14,16 @@ module.exports = {
         'base': '16px',
         'lg': '24px',
         'xl': '32px',
-        '2xl': '48px'
+        '2xl': '48px',
+        '3xl': '64px'
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries'),
+  ],
 }
 
 
