@@ -925,6 +925,10 @@ select {
 .pt-20 {
   padding-top: 5rem;
 }
+.px-4 {
+  padding: 0 1.75rem;
+}
+
 .p-20 {
   padding: 5rem;
 }
@@ -1033,6 +1037,10 @@ select {
     margin-top: 5rem;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1096,6 +1104,10 @@ select {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:mt-0 {
@@ -1193,6 +1205,10 @@ select {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 
   .lg\:h-screen {
