@@ -776,6 +776,12 @@ select {
 .gap-10 {
   gap: 2.5rem;
 }
+.gap-y-20 {
+  row-gap: 5rem;
+}
+.gap-x-10 {
+  column-gap: 2.5rem;
+}
 .gap-16 {
   gap: 4rem;
 }
@@ -922,6 +928,12 @@ select {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pt-20 {
   padding-top: 5rem;
 }
@@ -955,6 +967,9 @@ select {
 }
 .text-lg {
   font-size: 24px;
+}
+.text-md {
+  font-size: 32px;
 }
 .text-sm {
   font-size: 12px;
@@ -1090,6 +1105,11 @@ select {
   .sm\:p-0 {
     padding: 0px;
   }
+  .sm\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
 
 }
 .col-span-2 {
@@ -1185,6 +1205,11 @@ select {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .md\:py-5 {
