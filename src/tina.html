@@ -12,25 +12,28 @@
 </head>
 
 <body>
-    <nav class="bg-white">
-        <div class="max-w-[1540px] flex h-[80px] flex-wrap items-center justify-between mx-auto p-4">
+
+
+    <nav class="bg-white fixed top-0 w-full z-10">
+        <div class="max-w-[1540px] flex h-[80px] items-center justify-between mx-auto p-4">
             <a href="" class="flex items-center">
-                <img src="../public/images/glob/primary.svg" class="h-6 mr-3" alt="Flowbite Logo" />
+                <img src="../public/images/glob/primary.svg" style="height: 25px;" class="mr-3" alt="Flowbite Logo" />
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                 class="menu-btn inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                <svg style="width: 30px;" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                         clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="hidden w-full lg:block md:w-auto" id="navbar-default">
+            <div class="navbar sm:h-auto h-full-nav sm:static fixed top-20 left-0 lg:block z-10 bg-white hidden w-full md:w-auto"
+                id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    class="font-medium flex sm:py-0 py-10 flex-col h-full sm:justify-none justify-between p-5 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
                     <li>
                         <a href="./artists.html" class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
                             aria-current="page">Artists</a>
@@ -50,292 +53,312 @@
                     <li>
                         <a href="#" class="block py-2 rounded text-clr_monochrome_dark">About us</a>
                     </li>
-                    <div class="flex">
-                        <select class="text-gray-900 bg-white border-none ring-none text-base">
+                    <li>
+                        <select class="text-gray-900 block text-base" style="outline: none; border: 0;">
                             <option value="CA">SL</option>
                         </select>
-                    </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="md:py-10">
-        <div class='grid md:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 p-4 m-auto'>
-            <div class='flex flex-col w-full'>
-                <div class="h-full flex items-center">
-                    <h1 class='text-3xl md:py-5 py-10 text-clr_primary font-thin'>Tina Dobrajc</h1>
+    <main class="py-20">
+        <section>
+            <div class='grid md:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 p-4 m-auto'>
+                <div class='flex flex-col w-full'>
+                    <div class="h-full flex items-center">
+                        <h1 class='text-3xl md:py-5 py-10 text-clr_primary font-thin'>Tina Dobrajc</h1>
+                    </div>
+                    <div class="md:flex hidden gap-20">
+                        <ul class="text-base space-y-2 text-clr_monochrome_dark">
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                        </ul>
+                        <p class="text-base">Slikarska dela akademske slikarke Tine Dobrajc odlikuje svojevrstna
+                            prepoznavna
+                            ikonografija,
+                            kjer umetnica prepleta tradicijo s sodobnostjo, pri čimer se navdihuje zlasti v slovenski
+                            folklorni zapuščini in mitologiji na eni strani ter v množični kulturi in filmu na drugi
+                            strani.
+                            V delih Dobrajčeva pogosto raziskuje, prevprašuje in na-novo definira zlasti položaj ženske
+                            v
+                            sodobni (slovenski) družbi. Večinoma ustvarja (večja) slikarska dela, deluje pa tudi na
+                            področju
+                            ilustracije in gledališke scenografije.</p>
+                    </div>
                 </div>
-                <div class="md:flex hidden gap-20">
-                    <ul class="text-base space-y-2 text-clr_monochrome_dark">
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                    </ul>
-                    <p class="text-base">Slikarska dela akademske slikarke Tine Dobrajc odlikuje svojevrstna prepoznavna
+                <div class="flex md:justify-end sm:pt-20 justify-center">
+                    <img class='max-w-[550px] w-full' src='../public/images/aritsts/img2.svg' alt="/" />
+                </div>
+                <div class="md:hidden flex flex-col gap-10">
+                    <p class="text-base py-5">Slikarska dela akademske slikarke Tine Dobrajc odlikuje svojevrstna
+                        prepoznavna
                         ikonografija,
                         kjer umetnica prepleta tradicijo s sodobnostjo, pri čimer se navdihuje zlasti v slovenski
                         folklorni zapuščini in mitologiji na eni strani ter v množični kulturi in filmu na drugi strani.
                         V delih Dobrajčeva pogosto raziskuje, prevprašuje in na-novo definira zlasti položaj ženske v
                         sodobni (slovenski) družbi. Večinoma ustvarja (večja) slikarska dela, deluje pa tudi na področju
                         ilustracije in gledališke scenografije.</p>
+                    <ul class="text-base space-y-2 text-clr_monochrome_dark">
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                    </ul>
                 </div>
             </div>
-            <div class="flex md:justify-end justify-center">
-                <img class='max-w-[550px] w-full' src='../public/images/aritsts/img2.svg' alt="/" />
-            </div>
-            <div class="md:hidden flex flex-col gap-10">
-                <p class="text-base py-5">Slikarska dela akademske slikarke Tine Dobrajc odlikuje svojevrstna
-                    prepoznavna
-                    ikonografija,
-                    kjer umetnica prepleta tradicijo s sodobnostjo, pri čimer se navdihuje zlasti v slovenski
-                    folklorni zapuščini in mitologiji na eni strani ter v množični kulturi in filmu na drugi strani.
-                    V delih Dobrajčeva pogosto raziskuje, prevprašuje in na-novo definira zlasti položaj ženske v
-                    sodobni (slovenski) družbi. Večinoma ustvarja (večja) slikarska dela, deluje pa tudi na področju
-                    ilustracije in gledališke scenografije.</p>
-                <ul class="text-base space-y-2 text-clr_monochrome_dark">
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                </ul>
-            </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section class="md:py-20">
-        <div class="max-w-[1540px] mx-auto">
-            <figure class="hover-img">
-                <img class="w-full" src="../public/images/tina/bg.svg" />
-                <figcaption class="text-base space-y-4">
-                    <h3 class="text-lg">Slavic Fusion</h3>
-                    <p>Olje na platno
-                        77 × 99 cm</p>
-                    <p>2018</p>
-                </figcaption>
-            </figure>
+        <section class="md:py-20">
+            <div class="max-w-[1540px] mx-auto">
+                <figure class="hover-img">
+                    <img class="w-full" src="../public/images/tina/bg.svg" />
+                    <figcaption class="text-base space-y-4">
+                        <h3 class="text-lg">Slavic Fusion</h3>
+                        <p>Olje na platno
+                            77 × 99 cm</p>
+                        <p>2018</p>
+                    </figcaption>
+                </figure>
 
-            <div class='grid md:grid-cols-3 grid-cols-1 gap-10 w-full lg:px-0 px-5 sm:mt-20 m-auto'>
-                <div>
-                    <h1 class='text-2xl py-5 max-w-[450px] font-thin'>Biography</h1>
-                </div>
-                <div>
-                    <p>
-                        Akademska slikarka Tina Dobrajc se je rodila leta 1984 v Kranju. Leta 2007 je diplomirala na
-                        Akademiji za likovno umetnost in oblikovanje v Ljubljani ter nato na isti akademiji pod
-                        mentorstvom profesorja Hermana Gvardjančiča leta 2011 zaključila še magistrski študij
-                        slikarstva.
-                    </p>
-                    <p>
-
-                        Njeno umetniško ustvarjanje je bilo opaženo in prepoznano že zgodaj v njeni karieri; leta
-                        2011
-                        je bila nominirana za ESSL art award, leta 2015 je prejela priznanje Riharda Jakopiča za mlade
-                        umetnike, leto kasneje pa je za svoje ilustacije prejela plaketo Hinka Smekarja. Sodelovala je
-                        na več samostojnih in skupinskih razstavah doma in v tujini.
-                    </p>
-
-                    <p>
-
-                        Njena slikarska dela so večinoma večjih dimenzij, v tehniki akril (in mešana tehnika) na platno,
-                        čemur umetnica na platno občasno dodaja še umetne rože/volno/perle. Prevladujejo temnejše barve
-                        v kombinaciji s pogostim svetlim ali barvno intenzivnem poudarkom.
-                    </p>
-                    <p>
-
-
-                        Tina Dobrajc sega na področje slikarskega izražanja, ki v svoji biti združuje domačnost, milino
-                        ter hkrati krutost, neusmiljenost. Slikarka nagovarja gledalca neposredno,
-                    </p>
-                </div>
-                <div>
-                    <p>saj njene ženske figure zrejo iz slik in s svojo naturalistično upodobitvijo skorajda vstopajo v
-                        prostor. Te figure so neizprosne posameznice in aktivne članice družbe. Čeprav so pogosto ujete
-                        v ljubke podobe deklic, je njihova drža vseprej kot naivna in sramežljiva, saj zavzemajo z jasno
-                        mesto, ki jim pritiče v okolju.</p>
-
-                    <p>Z navdihovanjem v slovenski folklorni zgodovini, zlasti s poseganjem po posameznih
-                        predmetih, ki
-                        imajo močno simboliko, Dobrajčeva (sodobne) ženske postavi v novo okolje, nov kontekst.
-                    </p>
-                    <p>
-                        Pogost je motiv avbe (oz. slovenske narodne noše), ki je pogosto označevalka tradicije,
-                        ritualnega prehoda dekleta v odraslo žensko, ki pa se v Dobrajčenih delih pojavlja skupaj z
-                        ne-tradicionalnimi simboli - skupaj z razgaljenim ženskim telesom/ oprsjem/ sodobnimi
-                        mladostnimi oblačili. Umetnica tako pogosto združuje, zgodovinsko gledano, ne-združljive
-                        elemente - avba je postavljena skupaj s spolno osvobojenim telesom – ker ustvarja novo področje
-                        širšega in svobodnejšega razmisleka o ženski in njeni poziciji tako v sodobni družbi kot v
-                        nacionalnem zgodovinskem izročilu.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="py-20">
-        <div class="max-w-[1540px] mx-auto">
-            <div class="grid lg:grid-cols-2 grid-cols-1 px-5 grid-cols-1 sm:items-start items-center">
-                <div class="grid sm:grid-cols-2 gap-5">
-                    <figure class="hover-img">
-                        <img class="w-full" src="../public/images/tina/Tina-Dobrajc-Kultura-smrti-smrt-kulture.svg" />
-                        <figcaption class="text-base space-y-4">
-                            <h3 class="text-lg">Slavic Fusion</h3>
-                            <p>Olje na platno
-                                77 × 99 cm</p>
-                            <p>2018</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="hover-img" style="max-height: 520px;">
-                        <img class="w-full" src="../public/images/tina/Tina-Dobrajc-Horda.svg" />
-                        <figcaption class="text-base space-y-4">
-                            <h3 class="text-lg">Slavic Fusion</h3>
-                            <p>Olje na platno
-                                77 × 99 cm</p>
-                            <p>2018</p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class='max-w-[1540px] p-4 m-auto'>
-            <div class='w-full text-left'>
-                <p class='text-2xl font-light py-10'>Exhibitions</p>
-            </div>
-            <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-between gap-8 w-full">
-                <a href="./artist1.html">
-                    <img class="w-full" src="../public/images/tina/_KKF5280.jpg">
-                    <p class="pt-3 text-base text-clr_primary font-semibold">Sove niso, kar se zdijo</p>
-                    <p>Galerija Miklova hiša v Ribnici, Ribnica</p>
-                    <p class="pt-5">2022</p>
-                </a>
-                <a href="./artist1.html">
-                    <img class="w-full" src="../public/images/tina/_KKF3717-Edit.jpg">
-                    <p class="pt-3 text-base text-clr_primary font-semibold">Balkanske obljube </p>
-                    <p>Galerija Y, Ljubljana</p>
-                    <p class="pt-5">2022</p>
-                </a>
-                <a href="./artist1.html">
-                    <img class="w-full" src="../public/images/tina/_DSC8933.jpg">
-                    <p class="pt-3 text-base text-clr_primary font-semibold">Žival sem, ujeta v tvoj vroč beton </p>
-                    <p>Galerija Kresija, Ljubljana</p>
-                    <p class="pt-5">2020</p>
-                </a>
-                <a href="./artist1.html">
-                    <img class="w-full" src="../public/images/tina/_DSC9272.jpg">
-                    <p class="pt-3 text-base text-clr_primary font-semibold">Prazne so grape</p>
-                    <p>Mestna Galerija Nova Gorica, Nova Gorica</p>
-                    <p class="pt-5">2020</p>
-                </a>
-            </div>
-            <div class="grid md:grid-cols-2 grid-cols-1 py-32 gap-10">
-                <div class="w-full text-xl flex py-2 items-center text-clr_primary font-thin gap-x-10 border-b-2">
-                    <img class="w-[35px]" src="../public/icons/plus-solid.svg">
-                    <p>Solo exhibitions</p>
-                </div>
-                <div class="w-full text-xl py-2  flex items-center text-clr_primary font-thin gap-x-10 border-b-2">
-                    <img class="w-[35px]" src="../public/icons/plus-solid.svg">
-                    <p>Group exhibitions</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20">
-        <div class="max-w-[1540px] mx-auto">
-            <div class="grid md:grid-cols-3 grid-cols-1 items-center md:gap-32 gap-8">
-                <img class="w-full"
-                    src="../public/images/tina/PREDOGLED_Post-Tenebras-Lux_2020_TinaDobrajc_210x275cm 1.svg">
-                <img class="w-full md:col-span-2 col-span-1" src="../public/images/tina/tinadobrajc2.png">
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20">
-        <div class='max-w-[1540px] grid md:grid-cols-2 grid-cols-1 p-4 m-auto'>
-            <div class='w-full text-left'>
-                <p class='text-2xl font-light py-10'>Awards & recognitions</p>
-            </div>
-            <div class="max-w-[546px]">
-                <div class="flex gap-10 border-t-2 border-opacity-20 border-clr_primary py-3">
-                    <p>2016</p>
-                    <div class="flex flex-col space-y-2">
-                        <div>
-                            <p class="font-semibold">Plaketa Hinka Smrekarja</p>
-                            <p>Plaketa Hinka Smrekarja za ilustratorski projekt: Kurent, MK, Ljubljana</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold">Delovna štipendija Ministrstva za kulturo</p>
-                            <p>
-                                Prejemnica delovne štipendije Ministrstva za kulturo na področju vizualnih umetnosti za
-                                projekt Velika Dekleta ne jočejo/Big Girls don't cry, Ljubljana</p>
-                        </div>
+                <div class='grid md:grid-cols-3 grid-cols-1 gap-10 w-full lg:px-0 px-5 sm:mt-20 m-auto'>
+                    <div>
+                        <h1 class='text-2xl py-5 max-w-[450px] font-thin'>Biography</h1>
                     </div>
-                </div>
-                <div class="flex gap-10 border-t-2 border-opacity-20 border-clr_primary py-3">
-                    <p>2015</p>
-                    <div class="flex flex-col space-y-2">
-                        <div>
-                            <p class="font-semibold">Priznanje Riharda Jakopiča</p>
-                            <p>Priznanje Riharda Jakopiča za mlade umetnike, Ljubljana</p>
-                        </div>
+                    <div>
+                        <p>
+                            Akademska slikarka Tina Dobrajc se je rodila leta 1984 v Kranju. Leta 2007 je diplomirala na
+                            Akademiji za likovno umetnost in oblikovanje v Ljubljani ter nato na isti akademiji pod
+                            mentorstvom profesorja Hermana Gvardjančiča leta 2011 zaključila še magistrski študij
+                            slikarstva.
+                        </p>
+                        <p>
+
+                            Njeno umetniško ustvarjanje je bilo opaženo in prepoznano že zgodaj v njeni karieri; leta
+                            2011
+                            je bila nominirana za ESSL art award, leta 2015 je prejela priznanje Riharda Jakopiča za
+                            mlade
+                            umetnike, leto kasneje pa je za svoje ilustacije prejela plaketo Hinka Smekarja. Sodelovala
+                            je
+                            na več samostojnih in skupinskih razstavah doma in v tujini.
+                        </p>
+
+                        <p>
+
+                            Njena slikarska dela so večinoma večjih dimenzij, v tehniki akril (in mešana tehnika) na
+                            platno,
+                            čemur umetnica na platno občasno dodaja še umetne rože/volno/perle. Prevladujejo temnejše
+                            barve
+                            v kombinaciji s pogostim svetlim ali barvno intenzivnem poudarkom.
+                        </p>
+                        <p>
+
+
+                            Tina Dobrajc sega na področje slikarskega izražanja, ki v svoji biti združuje domačnost,
+                            milino
+                            ter hkrati krutost, neusmiljenost. Slikarka nagovarja gledalca neposredno,
+                        </p>
                     </div>
-                </div>
-                <div class="flex gap-10 border-y-2 border-opacity-20 border-clr_primary py-3">
-                    <p>2011</p>
-                    <div class="flex flex-col space-y-2">
-                        <div>
-                            <p class="font-semibold">ESSL Art Award Nomination </p>
-                            <p>Nominiranka za nagrado ESSL art award, Ljubljana</p>
-                        </div>
+                    <div>
+                        <p>saj njene ženske figure zrejo iz slik in s svojo naturalistično upodobitvijo skorajda
+                            vstopajo v
+                            prostor. Te figure so neizprosne posameznice in aktivne članice družbe. Čeprav so pogosto
+                            ujete
+                            v ljubke podobe deklic, je njihova drža vseprej kot naivna in sramežljiva, saj zavzemajo z
+                            jasno
+                            mesto, ki jim pritiče v okolju.</p>
+
+                        <p>Z navdihovanjem v slovenski folklorni zgodovini, zlasti s poseganjem po posameznih
+                            predmetih, ki
+                            imajo močno simboliko, Dobrajčeva (sodobne) ženske postavi v novo okolje, nov kontekst.
+                        </p>
+                        <p>
+                            Pogost je motiv avbe (oz. slovenske narodne noše), ki je pogosto označevalka tradicije,
+                            ritualnega prehoda dekleta v odraslo žensko, ki pa se v Dobrajčenih delih pojavlja skupaj z
+                            ne-tradicionalnimi simboli - skupaj z razgaljenim ženskim telesom/ oprsjem/ sodobnimi
+                            mladostnimi oblačili. Umetnica tako pogosto združuje, zgodovinsko gledano, ne-združljive
+                            elemente - avba je postavljena skupaj s spolno osvobojenim telesom – ker ustvarja novo
+                            področje
+                            širšega in svobodnejšega razmisleka o ženski in njeni poziciji tako v sodobni družbi kot v
+                            nacionalnem zgodovinskem izročilu.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-10">
-        <div class='grid md:grid-cols-3 gap-16 justify-items-stretch max-w-[1540px] p-4 m-auto'>
-            <div class="md:hidden flex items-center">
-                <div
-                    class='text-xl py-5 w-full border-b-2 border-clr_primary border-opacity-20 text-clr_primary font-normal'>
-                    Selected artworks
+
+        <section class="py-20">
+            <div class="max-w-[1540px] mx-auto">
+                <div class="grid lg:grid-cols-2 grid-cols-1 px-5 grid-cols-1 sm:items-start items-center">
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <figure class="hover-img">
+                            <img class="w-full"
+                                src="../public/images/tina/Tina-Dobrajc-Kultura-smrti-smrt-kulture.svg" />
+                            <figcaption class="text-base space-y-4">
+                                <h3 class="text-lg">Slavic Fusion</h3>
+                                <p>Olje na platno
+                                    77 × 99 cm</p>
+                                <p>2018</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="hover-img" style="max-height: 520px;">
+                            <img class="w-full" src="../public/images/tina/Tina-Dobrajc-Horda.svg" />
+                            <figcaption class="text-base space-y-4">
+                                <h3 class="text-lg">Slavic Fusion</h3>
+                                <p>Olje na platno
+                                    77 × 99 cm</p>
+                                <p>2018</p>
+                            </figcaption>
+                        </figure>
+
+                    </div>
                 </div>
             </div>
-            <div class="flex md:col-span-2 col-span-1 justify-start">
-                <img class='w-full' src='../public/images/tina/slavic-fusion-i-2018-805x460 1.svg' alt="/" />
+        </section>
+
+        <section>
+            <div class='max-w-[1540px] p-4 m-auto'>
+                <div class='w-full text-left'>
+                    <p class='text-2xl font-light py-10'>Exhibitions</p>
+                </div>
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-between gap-8 w-full">
+                    <a href="./artist1.html">
+                        <img class="w-full" src="../public/images/tina/_KKF5280.jpg">
+                        <p class="pt-3 text-base text-clr_primary font-semibold">Sove niso, kar se zdijo</p>
+                        <p>Galerija Miklova hiša v Ribnici, Ribnica</p>
+                        <p class="pt-5">2022</p>
+                    </a>
+                    <a href="./artist1.html">
+                        <img class="w-full" src="../public/images/tina/_KKF3717-Edit.jpg">
+                        <p class="pt-3 text-base text-clr_primary font-semibold">Balkanske obljube </p>
+                        <p>Galerija Y, Ljubljana</p>
+                        <p class="pt-5">2022</p>
+                    </a>
+                    <a href="./artist1.html">
+                        <img class="w-full" src="../public/images/tina/_DSC8933.jpg">
+                        <p class="pt-3 text-base text-clr_primary font-semibold">Žival sem, ujeta v tvoj vroč beton </p>
+                        <p>Galerija Kresija, Ljubljana</p>
+                        <p class="pt-5">2020</p>
+                    </a>
+                    <a href="./artist1.html">
+                        <img class="w-full" src="../public/images/tina/_DSC9272.jpg">
+                        <p class="pt-3 text-base text-clr_primary font-semibold">Prazne so grape</p>
+                        <p>Mestna Galerija Nova Gorica, Nova Gorica</p>
+                        <p class="pt-5">2020</p>
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-2 grid-cols-1 py-32 gap-10">
+                    <a href="#" class="exhibition w-full text-xl flex py-2 items-center text-clr_primary font-thin gap-x-10 border-b-2">
+                        <svg class="w-[35px]" fill="#BBBBBB" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M915.744 213v702.744H213v87.842h702.744v702.744h87.842v-702.744h702.744v-87.842h-702.744V213z" fill-rule="evenodd"/>
+                        </svg>
+                        <p>Solo exhibitions</p>
+                    </a>
+                    <a href="#" class="exhibition w-full text-xl py-2 flex items-center text-clr_primary font-thin gap-x-10 border-b-2">
+                        <svg class="w-[35px]" fill="#BBBBBB" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M915.744 213v702.744H213v87.842h702.744v702.744h87.842v-702.744h702.744v-87.842h-702.744V213z" fill-rule="evenodd"/>
+                        </svg>
+                        <p>Group exhibitions</p>
+                    </a>
+                </div>
             </div>
-            <div class='flex flex-col w-full'>
-                <div class="md:flex hidden items-center">
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-[1540px] mx-auto">
+                <div class="grid md:grid-cols-3 grid-cols-1 items-center md:gap-32 gap-8">
+                    <img class="w-full"
+                        src="../public/images/tina/PREDOGLED_Post-Tenebras-Lux_2020_TinaDobrajc_210x275cm 1.svg">
+                    <img class="w-full md:col-span-2 col-span-1" src="../public/images/tina/tinadobrajc2.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class='max-w-[1540px] grid md:grid-cols-2 grid-cols-1 p-4 m-auto'>
+                <div class='w-full text-left'>
+                    <p class='text-2xl font-light py-10'>Awards & recognitions</p>
+                </div>
+                <div class="max-w-[546px]">
+                    <div class="flex gap-10 border-t-2 border-opacity-20 border-clr_primary py-3">
+                        <p>2016</p>
+                        <div class="flex flex-col space-y-2">
+                            <div>
+                                <p class="font-semibold">Plaketa Hinka Smrekarja</p>
+                                <p>Plaketa Hinka Smrekarja za ilustratorski projekt: Kurent, MK, Ljubljana</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Delovna štipendija Ministrstva za kulturo</p>
+                                <p>
+                                    Prejemnica delovne štipendije Ministrstva za kulturo na področju vizualnih umetnosti
+                                    za
+                                    projekt Velika Dekleta ne jočejo/Big Girls don't cry, Ljubljana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-10 border-t-2 border-opacity-20 border-clr_primary py-3">
+                        <p>2015</p>
+                        <div class="flex flex-col space-y-2">
+                            <div>
+                                <p class="font-semibold">Priznanje Riharda Jakopiča</p>
+                                <p>Priznanje Riharda Jakopiča za mlade umetnike, Ljubljana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-10 border-y-2 border-opacity-20 border-clr_primary py-3">
+                        <p>2011</p>
+                        <div class="flex flex-col space-y-2">
+                            <div>
+                                <p class="font-semibold">ESSL Art Award Nomination </p>
+                                <p>Nominiranka za nagrado ESSL art award, Ljubljana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <div class='grid md:grid-cols-3 gap-16 justify-items-stretch max-w-[1540px] p-4 m-auto'>
+                <div class="md:hidden flex items-center">
                     <div
-                        class='text-xl py-5 w-full border-b-2 border-clr_primary border-opacity-20 text-clr_primary font-normal'>
+                        class='text-xl py-5 w-full border-b-2 border-clr_primary border-opacity-20 text-clr_primary font-thin'>
                         Selected artworks
                     </div>
                 </div>
-                <div class="md:py-10">
-                    <h1 class="text-lg">Slavic Fusion</h1>
-                    <p class="text-base py-3">Olje na platno
-                        77 × 99 cm</p>
-                    <p class="text-base">2018</p>
+                <div class="flex md:col-span-2 col-span-1 justify-start">
+                    <img class='w-full' src='../public/images/tina/slavic-fusion-i-2018-805x460 1.svg' alt="/" />
                 </div>
-                <div class="flex gap-10 py-10">
-                    <img class="w-[45px]" src="../public/icons/arrow-left-svgrepo-com.svg">
-                    <img class="w-[45px]" src="../public/icons/arrow-right-solid.svg">
+                <div class='flex flex-col w-full'>
+                    <div class="md:flex hidden items-center">
+                        <div
+                            class='text-xl py-5 w-full border-b-2 border-clr_primary border-opacity-20 text-clr_primary font-thin'>
+                            Selected artworks
+                        </div>
+                    </div>
+                    <div class="md:py-10">
+                        <h1 class="text-lg">Slavic Fusion</h1>
+                        <p class="text-base py-3">Olje na platno<br>
+                            77 × 99 cm</p>
+                        <p class="text-base">2018</p>
+                    </div>
+                    <div class="flex gap-10 py-10">
+                        <a href="#"><img class="w-[35px]" src="../public/icons/arrow_back.svg"></a>
+                        <a href="#"><img class="w-[35px]" src="../public/icons/arrow_forward.svg"></a>
+                    </div>
+                    <p class="text-base pt-20 w-2/3">For any inquiries about our artworks, please <span
+                            class="font-semibold underline">contact us.</span></p>
                 </div>
-                <p class="text-base w-2/3">For any inquiries about our artworks, please <span
-                        class="font-semibold underline">contact us.</span></p>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-
+    </main>
 
 
     <footer>
-        <div class="mx-auto w-full max-w-[1540px] px-6 py-12">
+        <div class="mx-auto  border-t-2 border-clr_primary border-opacity-20 w-full max-w-[1540px] px-6 py-12">
             <div class="md:flex py-4 md:justify-between">
                 <div class="w-full mb-6 md:mb-0">
                     <a href="#" class="flex items-center">
@@ -434,6 +457,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../main.js"></script>
 </body>
 
 </html>
