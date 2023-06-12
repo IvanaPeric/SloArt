@@ -72,6 +72,47 @@
     font-weight: 300;
 }
 
-.exhibition:hover > svg {
+.exhibition:hover>svg {
     fill: black;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exhibition+div {
+    height: 0px;
+}
+
+.exhibition+div > div {
+    height: 0px;
+    display: none;
+}
+
+.exhibition:hover+div > div {
+    height: auto;
+    display: block;
+}
+
+.exhibition:hover+div {
+    height: 1000px;
+    transition: all 0.5s ease;
+
 }
