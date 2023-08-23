@@ -2,6 +2,8 @@ const navbar = document.querySelector('.navbar');
 
 const openNav = document.querySelector('.icon-open');
 const closeNav = document.querySelector('.icon-close');
+const exhibitions = document.querySelectorAll('.exhibition');
+
 
 openNav.addEventListener('click', (e) => {
     e.preventDefault()
@@ -17,3 +19,9 @@ closeNav.addEventListener('click', (e) => {
     navbar.classList.toggle('hidden');
 })
 
+exhibitions.forEach((exhibition) => {
+    exhibition.addEventListener('mouseenter', (e) => {
+        console.log(e);
+        exhibition.classList.add('active');
+    })
+})
