@@ -130,7 +130,7 @@
 }
 
 .active+div {
-    height: 1000px;
+    height: auto;
 }
 
 .active+div > div {

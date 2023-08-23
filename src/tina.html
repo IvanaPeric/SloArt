@@ -27,7 +27,7 @@
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
+          class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -41,75 +41,76 @@
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
+          class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
           <img style="height: 20px" src="../public/icons/close.svg" alt="" />
         </button>
-        <div
-          class="navbar lg:h-auto h-full-nav sm:static fixed top-20 left-0 md:block z-10 bg-white hidden w-full md:w-auto"
-          id="navbar-default"
-        >
-          <ul
-            class="font-medium flex sm:py-0 py-10 flex-col h-full sm:justify-none justify-between p-5 md:p-0 md:flex-row md:space-x-6 md:mt-0 md:border-0 md:bg-white"
+          <div
+            class="navbar h-full-nav lg:static lg:block hidden fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
+            id="navbar-default"
           >
-            <li>
-              <a
-                href="./artists.html"
-                class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
-                aria-current="page"
-                >Artists</a
-              >
-            </li>
-            <li>
-              <a
-                href="./src/home.html"
-                class="block py-2 rounded text-clr_monochrome_dark"
-                >Exhibitions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >Art fairs</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >Publications</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >News</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >About us</a
-              >
-            </li>
-            <li>
-              <select
-                class="text-gray-900 block text-base"
-                style="outline: none; border: 0"
-              >
-                <option value="CA">SL</option>
-              </select>
-            </li>
-          </ul>
-        </div>
+            <ul
+              class="font-medium flex sm:py-0 py-10 flex-col h-full sm:justify-none justify-between p-5 lg:p-0 lg:flex-row lg:space-x-6 md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="./artists.html"
+                  class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
+                  aria-current="page"
+                  >Artists</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./src/home.html"
+                  class="block py-2 rounded text-clr_monochrome_dark"
+                  >Exhibitions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                  >Art fairs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <select
+                  class="text-gray-900 block text-base"
+                  style="outline: none; border: 0"
+                >
+                  <option value="CA">SL</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        
       </div>
     </nav>
 
-    <main class="px-5">
+    <main>
       <section>
         <div
           class="grid md:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 p-4 m-auto"
         >
           <div class="flex flex-col w-full">
             <div class="h-full flex items-center">
-              <h1 class="text-3xl md:py-5 py-10 text-clr_primary font-thin">
+              <h1 class="text-3xl lg:py-5 pt-20 text-clr_primary font-thin">
                 Tina Dobrajc
               </h1>
             </div>
@@ -175,12 +176,12 @@
             </figcaption>
           </figure>
           <div
-            class="grid md:grid-cols-3 grid-cols-1 gap-10 w-full sm:mt-20 m-auto"
+            class="grid md:grid-cols-3 grid-cols-1 px-5 gap-10 w-full sm:mt-20 m-auto"
           >
             <div>
               <h1 class="text-2xl py-5 max-w-[450px] font-thin">Biography</h1>
             </div>
-            <div class="col-span-2 grid grid-cols-2 gap-5">
+            <div class="col-span-2 grid lg:grid-cols-2 grid-cols-1 gap-5">
               <p>
                 Akademska slikarka Tina Dobrajc se je rodila leta 1984 v Kranju.
                 Leta 2007 je diplomirala na Akademiji za likovno umetnost in
@@ -209,8 +210,7 @@
                 biti združuje domačnost, milino ter hkrati krutost,
                 neusmiljenost. Slikarka nagovarja gledalca neposredno,
               </p>
-            
-            
+
               <p>
                 saj njene ženske figure zrejo iz slik in s svojo naturalistično
                 upodobitvijo skorajda vstopajo v prostor. Te figure so
@@ -319,11 +319,11 @@
               <p class="pt-5">2020</p>
             </a>
           </div>
-          <div class="grid md:grid-cols-2 grid-cols-1 py-32 gap-10">
+          <div class="grid md:grid-cols-2 grid-cols-1 pt-20 gap-10">
             <div class="flex flex-col">
               <a
                 href="#"
-                class="exhibition w-full text-xl flex py-2 items-center text-clr_primary font-thin gap-x-10 border-b-2"
+                class="exhibition w-full lg:text-2xl text-xl flex py-2 items-center text-clr_primary font-thin gap-x-10 border-b-2"
               >
                 <svg
                   class="w-[35px]"
@@ -475,7 +475,7 @@
             <div>
               <a
                 href="#"
-                class="exhibition w-full text-xl py-2 flex items-center text-clr_primary font-thin gap-x-10 border-b-2"
+                class="exhibition w-full lg:text-2xl text-xl py-2 flex items-center text-clr_primary font-thin gap-x-10 border-b-2"
               >
                 <svg
                   class="w-[35px]"
@@ -719,9 +719,7 @@
       </section>
 
       <section class="py-10">
-        <div
-          class=" p-4 max-w-[1540px] m-auto"
-        >
+        <div class="p-4 max-w-[1540px] m-auto">
           <div class="w-full grid lg:grid-cols-2 justify-between gap-16">
             <div class="md:hidden flex items-center">
               <div
@@ -731,9 +729,7 @@
               </div>
             </div>
 
-            <div
-              class="swiper mySwiper"
-            >
+            <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
@@ -773,37 +769,38 @@
               </div>
             </div>
             <div class="flex flex-col">
-                <div class="md:flex hidden items-center">
-                  <div
-                    class="text-xl py-5 w-full border-b-2 border-clr_primary border-opacity-20 text-clr_primary font-thin"
-                  >
-                    Selected artworks
-                  </div>
+              <div class="md:flex hidden items-center">
+                <div
+                  class="text-xl py-5 w-full border-b-2 border-clr_primary border-opacity-20 text-clr_primary font-thin"
+                >
+                  Selected artworks
                 </div>
-                <div class="md:py-10">
-                  <h1 class="text-lg">Slavic Fusion</h1>
-                  <p class="text-base py-3">
-                    Olje na platno<br />
-                    77 × 99 cm
-                  </p>
-                  <p class="text-base">2018</p>
-                </div>
-                <div class="flex gap-10 py-10">
-                  <a class="swiper-button-prev" href="#"
-                    ><img class="w-[35px]" src="../public/icons/arrow_back.svg"
-                  /></a>
-                  <a class="swiper-button-next" href="#"
-                    ><img class="w-[35px]" src="../public/icons/arrow_forward.svg"
-                  /></a>
-                </div>
-                <p class="text-base w-2/3">
-                  For any inquiries about our artworks, please
-                  <span class="font-semibold underline">contact us.</span>
-                </p>
               </div>
+              <div class="md:py-10">
+                <h1 class="text-lg">Slavic Fusion</h1>
+                <p class="text-base py-3">
+                  Olje na platno<br />
+                  77 × 99 cm
+                </p>
+                <p class="text-base">2018</p>
+              </div>
+              <div class="flex lg:justify-start justify-between gap-10 py-10">
+                <a class="swiper-button-prev" href="#"
+                  ><img class="w-[35px]" src="../public/icons/arrow_back.svg"
+                /></a>
+                <a class="swiper-button-next" href="#"
+                  ><img
+                    class="w-[35px]"
+                    src="../public/icons/arrow_forward.svg"
+                /></a>
+              </div>
+              <p class="text-base w-2/3">
+                For any inquiries about our artworks, please
+                <span class="font-semibold underline">contact us.</span>
+              </p>
             </div>
           </div>
-
+        </div>
       </section>
     </main>
 
