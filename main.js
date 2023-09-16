@@ -3,6 +3,7 @@ const navbar = document.querySelector('.navbar');
 const openNav = document.querySelector('.icon-open');
 const closeNav = document.querySelector('.icon-close');
 const exhibitions = document.querySelectorAll('.exhibition');
+const signs = document.querySelectorAll('.sign-exhibition');
 
 
 openNav.addEventListener('click', (e) => {
@@ -19,9 +20,10 @@ closeNav.addEventListener('click', (e) => {
     navbar.classList.toggle('hidden');
 })
 
-exhibitions.forEach((exhibition) => {
-    exhibition.addEventListener('mouseenter', (e) => {
-        console.log(e);
-        exhibition.classList.add('active');
+exhibitions.forEach((exhibition, index) => {
+    exhibition.addEventListener('click', (e) => {
+        exhibition.classList.toggle('active');
+        const active = exhibition.classList.contains('active');
+        signs[index].src = active ? "../public/icons/tina-minus.svg" : "../public/icons/tina-plus.svg"
     })
 })

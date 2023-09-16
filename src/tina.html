@@ -47,59 +47,58 @@
         >
           <img style="height: 20px" src="../public/icons/close.svg" alt="" />
         </button>
-          <div
-            class="navbar h-full-nav lg:static lg:block hidden fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
-            id="navbar-default"
+        <div
+          class="navbar h-full-nav lg:static lg:block hidden fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
+          id="navbar-default"
+        >
+          <ul
+            class="font-medium flex sm:py-0 py-10 flex-col h-full sm:justify-none justify-between p-5 lg:p-0 lg:flex-row lg:space-x-6 md:mt-0 md:border-0 md:bg-white"
           >
-            <ul
-              class="font-medium flex sm:py-0 py-10 flex-col h-full sm:justify-none justify-between p-5 lg:p-0 lg:flex-row lg:space-x-6 md:mt-0 md:border-0 md:bg-white"
-            >
-              <li>
-                <a
-                  href="./artists.html"
-                  class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
-                  aria-current="page"
-                  >Artists</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./src/home.html"
-                  class="block py-2 rounded text-clr_monochrome_dark"
-                  >Exhibitions</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                  >Art fairs</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                  >Publications</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                  >News</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                  >About us</a
-                >
-              </li>
-              <li>
-                <select
-                  class="text-gray-900 block text-base"
-                  style="outline: none; border: 0"
-                >
-                  <option value="CA">SL</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-        
+            <li>
+              <a
+                href="./artists.html"
+                class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
+                aria-current="page"
+                >Artists</a
+              >
+            </li>
+            <li>
+              <a
+                href="./src/home.html"
+                class="block py-2 rounded text-clr_monochrome_dark"
+                >Exhibitions</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >Art fairs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >News</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >About us</a
+              >
+            </li>
+            <li>
+              <select
+                class="text-gray-900 block text-base"
+                style="outline: none; border: 0"
+              >
+                <option value="CA">SL</option>
+              </select>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -321,23 +320,13 @@
           </div>
           <div class="grid md:grid-cols-2 grid-cols-1 pt-20 gap-10">
             <div class="flex flex-col">
-              <a
-                href="#"
+              <button
                 class="exhibition w-full lg:text-2xl text-xl flex py-2 items-center text-clr_primary font-thin gap-x-10 border-b-2"
               >
-                <svg
-                  class="w-[35px]"
-                  fill="#BBBBBB"
-                  viewBox="0 0 1920 1920"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M915.744 213v702.744H213v87.842h702.744v702.744h87.842v-702.744h702.744v-87.842h-702.744V213z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
+                <img class="w-[35px] sign-exhibition" src="../public/icons/tina-plus.svg" />
+
                 <p>Solo exhibitions</p>
-              </a>
+              </button>
               <div class="md:max-w-[546px]">
                 <div class="md:flex hidden gap-10 py-3">
                   <p style="width: 100px">2022</p>
@@ -473,23 +462,12 @@
               </div>
             </div>
             <div>
-              <a
-                href="#"
+              <button
                 class="exhibition w-full lg:text-2xl text-xl py-2 flex items-center text-clr_primary font-thin gap-x-10 border-b-2"
               >
-                <svg
-                  class="w-[35px]"
-                  fill="#BBBBBB"
-                  viewBox="0 0 1920 1920"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M915.744 213v702.744H213v87.842h702.744v702.744h87.842v-702.744h702.744v-87.842h-702.744V213z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <p>Group exhibitions</p>
-              </a>
+              <img class="w-[35px] sign-exhibition" src="../public/icons/tina-plus.svg" />
+              <p>Group exhibitions</p>
+              </button>
               <div class="md:max-w-[546px]">
                 <div class="md:flex hidden gap-10 py-3">
                   <p style="width: 100px">2022</p>
@@ -730,43 +708,7 @@
             </div>
 
             <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    class="h-full"
-                    src="../public/images/tina/_KKF3717-Edit.jpg"
-                    alt="/"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="w-full"
-                    src="../public/images/tina/_KKF3717-Edit.jpg"
-                    alt="/"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="w-full"
-                    src="../public/images/tina/_KKF3717-Edit.jpg"
-                    alt="/"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="w-full"
-                    src="../public/images/tina/_KKF3717-Edit.jpg"
-                    alt="/"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="w-full"
-                    src="../public/images/tina/_KKF3717-Edit.jpg"
-                    alt="/"
-                  />
-                </div>
-              </div>
+              <div class="swiper-wrapper"></div>
             </div>
             <div class="flex flex-col">
               <div class="md:flex hidden items-center">
@@ -777,12 +719,12 @@
                 </div>
               </div>
               <div class="md:py-10">
-                <h1 class="text-lg">Slavic Fusion</h1>
-                <p class="text-base py-3">
+                <h1 class="text-lg title-swiper">Slavic Fusion</h1>
+                <p class="text-base content-swiper py-3">
                   Olje na platno<br />
                   77 × 99 cm
                 </p>
-                <p class="text-base">2018</p>
+                <p class="text-base swiper-year">2018</p>
               </div>
               <div class="flex lg:justify-start justify-between gap-10 py-10">
                 <a class="swiper-button-prev" href="#"
@@ -945,7 +887,10 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        allowTouchMove: false,
       });
     </script>
+
+    <script src="../swipper.js"></script>
   </body>
 </html>
