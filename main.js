@@ -5,6 +5,7 @@ const closeNav = document.querySelector('.icon-close');
 const exhibitions = document.querySelectorAll('.exhibition');
 const signs = document.querySelectorAll('.sign-exhibition');
 
+localStorage.theme = 'light'
 
 openNav.addEventListener('click', (e) => {
     e.preventDefault()
