@@ -4,6 +4,7 @@ The Art Gallery Website is a custom-built platform designed specifically for sho
 
 ## Features
 
+
 - **Artwork Showcase**: The website serves as a virtual gallery, displaying a wide range of artwork, including paintings, sculptures, photographs, and more. Each artwork is showcased with high-quality images, detailed descriptions, and information about the artist.
 
 - **Artwork Categories and Filters**: The website offers categories and filters to help visitors navigate through the collection based on different criteria such as art style, medium, artist, or price range. This makes it easy for users to discover specific types of artwork or explore various artists.
