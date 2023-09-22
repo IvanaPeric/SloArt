@@ -11,120 +11,123 @@
 
   <body>
     <nav class="bg-white fixed top-0 w-full z-10">
-        <div
-          class="max-w-[1540px] flex h-[80px] items-center justify-between mx-auto p-4"
+      <div
+        class="max-w-[1540px] flex h-[80px] items-center justify-between mx-auto p-4"
+      >
+        <a href="#">
+          <img
+            src="../public/images/glob/primary.svg"
+            class="h-6 mr-3"
+            alt="Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
         >
-          <a href="" class="flex items-center">
-            <img
-              src="../public/images/glob/primary.svg"
-              style="height: 25px"
-              class="mr-3"
-              alt="Flowbite Logo"
-            />
-          </a>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
-            aria-controls="navbar-default"
-            aria-expanded="false"
+          <img
+            class="icon-open"
+            style="height: 16px"
+            src="../public/icons/menu.svg"
+            alt=""
+          />
+        </button>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <img style="height: 20px" src="../public/icons/close.svg" alt="" />
+        </button>
+        <div
+          class="navbar h-full-nav lg:static lg:block hidden h-full fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
+          id="navbar-default"
+        >
+          <ul
+            style="height: calc(100% - 80px)"
+            class="font-medium lg:text-base text-lg flex flex-col lg:p-0 p-5 sm:justify-none justify-between lg:flex-row lg:space-x-6 md:mt-0 md:border-0"
           >
-            <img
-              class="icon-open"
-              style="height: 20px"
-              src="../public/icons/menu.svg"
-              alt=""
-            />
-          </button>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <img style="height: 20px" src="../public/icons/close.svg" alt="" />
-          </button>
-            <div
-              class="navbar h-full-nav lg:static lg:block hidden fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
-              id="navbar-default"
-            >
-              <ul
-                class="font-medium flex sm:py-0 py-10 flex-col h-full sm:justify-none justify-between p-5 lg:p-0 lg:flex-row lg:space-x-6 md:mt-0 md:border-0 md:bg-white"
+            <li>
+              <a
+                href="./artists.html"
+                class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
+                aria-current="page"
+                >Artists</a
               >
-                <li>
-                  <a
-                    href="./artists.html"
-                    class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
-                    aria-current="page"
-                    >Artists</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./src/home.html"
-                    class="block py-2 rounded text-clr_monochrome_dark"
-                    >Exhibitions</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                    >Art fairs</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                    >Publications</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                    >News</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                    >About us</a
-                  >
-                </li>
-                <li>
-                  <select
-                    class="text-gray-900 block text-base"
-                    style="outline: none; border: 0"
-                  >
-                    <option value="CA">SL</option>
-                  </select>
-                </li>
-              </ul>
-            </div>
-          
-        </div>
-      </nav>
+            </li>
+            <li>
+              <a
+                href="./src/home.html"
+                class="block py-2 rounded text-clr_monochrome_dark"
+                >Exhibitions</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >Art fairs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >News</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
+                >About us</a
+              >
+            </li>
 
-    <main class="py-32">
-      <section>
+            <li>
+              <select
+                class="text-gray-900 block lg:text-base text-lg"
+                style="outline: none; border: 0"
+              >
+                <option value="CA">SL</option>
+                <option value="CA">GE</option>
+                <option value="CA">EN</option>
+              </select>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-20">
+      <section class="py-10">
         <div class="max-w-[1540px] mx-auto p-4">
           <div class="h-full flex items-center">
-            <h1 class="md:text-2xl text-xl md:pb-20 pb-10 text-clr_primary font-thin">
-              Current
-            </h1>
+            <h1 class="text-2xl pb-10 text-clr_primary font-light">Current</h1>
           </div>
           <div
-            class="grid xl:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 m-auto"
+            class="grid md:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 m-auto"
           >
             <div class="flex md:justify-end justify-center">
-              <img
-                class="w-full"
-                src="../public/images/current/_DSC9272.jpg"
-                alt="/"
-              />
+              <div class="w-full">
+                <img
+                  class="w-full"
+                  src="../public/images/current/_DSC9272.jpg"
+                  alt="/"
+                />
+              </div>
             </div>
             <div class="flex flex-col md:gap-10 gap-5">
               <div>
                 <p class="text-base leading-10">23 April — 14 May, 2023</p>
               </div>
               <div>
-                <h1 class="text-md font-thin">
+                <h1 class="text-md font-light">
                   A somewhat lengthy exhibition name
                 </h1>
                 <p class="text-base font-semibold py-5">Artist name</p>
@@ -153,29 +156,29 @@
         </div>
       </section>
 
-      <section class="md:py-20">
+      <section>
         <div class="max-w-[1540px] mx-auto p-4">
           <div class="h-full flex items-center">
-            <h1 class="md:text-2xl text-xl md:pb-20 pb-10 text-clr_primary font-thin">
-              Upcoming
-            </h1>
+            <h1 class="text-2xl pb-10 text-clr_primary font-light">Upcoming</h1>
           </div>
           <div
-            class="grid xl:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 m-auto"
+            class="grid md:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 m-auto"
           >
             <div class="flex md:justify-end justify-center">
-              <img
-                class="w-full"
-                src="../public/images/current/_KKF3717-Edit.jpg"
-                alt="/"
-              />
+              <div class="w-full">
+                <img
+                  class="w-full"
+                  src="../public/images/current/_DSC9272.jpg"
+                  alt="/"
+                />
+              </div>
             </div>
             <div class="flex flex-col md:gap-10 gap-5">
               <div>
-                <p class="text-base">23 April — 14 May, 2023</p>
+                <p class="text-base leading-10">23 April — 14 May, 2023</p>
               </div>
               <div>
-                <h1 class="text-md font-thin">
+                <h1 class="text-md font-light">
                   A somewhat lengthy exhibition name
                 </h1>
                 <p class="text-base font-semibold py-5">Artist name</p>
@@ -204,17 +207,15 @@
         </div>
       </section>
 
-      <section class="md:py-10 py-0">
+      <section class="py-10">
         <div class="max-w-[1540px] p-4 m-auto">
           <div class="flex items-center">
-            <h1 class="md:text-2xl text-xl md:py-5 py-10 text-clr_primary font-thin">
-              Art fairs
-            </h1>
+            <h1 class="text-2xl text-clr_primary font-light">Art fairs</h1>
           </div>
-          <div class="grid md:grid-cols-3 grid-cols-1 md:gap-10 m-auto">
-            <div class="col-span-1 md:pt-20 pb-5">
+          <div class="relative m-auto my-6">
+            <div class="lg:absolute top-0 left-0 col-span-1">
               <ul
-                class="flex md:flex-col flex-row items-start justify-between text-base gap-5 md:space-y-2 text-clr_monochrome_dark"
+                class="flex lg:flex-col flex-row items-start sm:justify-start justify-between text-base gap-5 text-clr_monochrome_dark"
               >
                 <li class="font-semibold">All</li>
                 <li>2023</li>
@@ -224,8 +225,8 @@
               </ul>
             </div>
 
-            <div class="col-span-2">
-              <div class="grid md:grid-cols-2 gap-10 grid-cols-1 m-auto">
+            <div class="lg:md:container mx-auto lg:py-0 py-5">
+              <div class="grid sm:grid-cols-2 gap-10 grid-cols-1 m-auto">
                 <div>
                   <img
                     class="w-full"
@@ -295,7 +296,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex justify-center py-10">
+              <div class="flex justify-center pt-20">
                 <nav class="mx-auto">
                   <ul class="flex items-center -space-x-px h-10 text-base">
                     <li>
@@ -391,21 +392,21 @@
 
     <footer>
       <div
-        class="mx-auto border-t-2 border-clr_primary border-opacity-20 w-full max-w-[1540px] px-6 py-12"
+        class="mx-auto border-t-2 border-clr_primary border-opacity-20 w-full max-w-[1540px] p-4"
       >
         <div class="md:flex py-4 md:justify-between">
           <div class="w-full mb-6 md:mb-0">
-            <a href="#" class="flex items-center">
+            <a href="#">
               <img
                 src="../public/images/glob/primary.svg"
                 class="h-6 mr-3"
-                alt="Flowbite Logo"
+                alt="Logo"
               />
             </a>
-            <h1 class="text-xl py-5 text-clr_monochrome_dark">
+            <h1 class="text-xl font-light py-5 text-clr_monochrome_dark">
               Zavod Y Gallery
             </h1>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 lg:grid-cols-3">
               <div>
                 <ul class="font-medium space-y-2">
                   <li>
@@ -434,15 +435,27 @@
                   </li>
                 </ul>
               </div>
-              <div class="sm:hidden flex w-full space-x-6 text-lg sm:mt-0">
+              <div class="md:hidden flex w-full space-x-6 text-lg sm:mt-0">
                 <a href="#" class="text-black">
-                  <i class="fa-regular fa-envelope"></i>
+                  <img
+                    class="w-[20px]"
+                    src="../public/icons/footer/mail.svg"
+                    alt="mail"
+                  />
                 </a>
                 <a href="#" class="text-black">
-                  <i class="fa-brands fa-facebook"></i>
+                  <img
+                    class="w-[20px]"
+                    src="../public/icons/footer/facebook.svg"
+                    alt="mail"
+                  />
                 </a>
                 <a href="#" class="text-black">
-                  <i class="fa-brands fa-instagram"></i>
+                  <img
+                    class="w-[20px]"
+                    src="../public/icons/footer/Instagram.svg"
+                    alt="mail"
+                  />
                 </a>
               </div>
             </div>
@@ -456,7 +469,7 @@
                 >
                   <div class="relative w-full">
                     <input
-                      class="block p-3 w-full text-base text-gray-900 bg-white border-2 border-gray-600"
+                      class="block p-3 w-full text-base text-gray-900 bg-white border-2 border-gray-400"
                       placeholder="Your email address"
                       type="email"
                       id="email"
@@ -466,7 +479,7 @@
                   <div>
                     <button
                       type="submit"
-                      class="py-3 px-5 w-full text-base font-medium border-2 border-gray-600 text-center bg-black text-white"
+                      class="py-4 px-5 w-full text-base font-medium text-center bg-black text-white"
                     >
                       Subscribe
                     </button>
@@ -488,21 +501,35 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 sm:mx-auto lg:my-8" />
-        <div class="sm:flex sm:items-start sm:justify-between">
-          <div class="sm:flex hidden w-full space-x-6 text-lg sm:mt-0">
+        <div
+          class="grid md:grid-cols-2 items-center justify-between grid-cols-1 max-w-[1540px] py-4 m-auto"
+        >
+          <div class="md:flex hidden w-full space-x-6 text-lg sm:mt-0">
             <a href="#" class="text-black">
-              <i class="fa-regular fa-envelope"></i>
+              <img
+                class="w-[20px]"
+                src="../public/icons/footer/mail.svg"
+                alt="mail"
+              />
             </a>
             <a href="#" class="text-black">
-              <i class="fa-brands fa-facebook"></i>
+              <img
+                class="w-[20px]"
+                src="../public/icons/footer/facebook.svg"
+                alt="mail"
+              />
             </a>
             <a href="#" class="text-black">
-              <i class="fa-brands fa-instagram"></i>
+              <img
+                class="w-[20px]"
+                src="../public/icons/footer/Instagram.svg"
+                alt="mail"
+              />
             </a>
           </div>
-          <div class="w-full flex sm:justify-start justify-center">
-            <ul class="flex space-x-6">
+
+          <div>
+            <ul class="flex justify-center space-x-6">
               <li>
                 <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
                   >Terms and conditions</a
