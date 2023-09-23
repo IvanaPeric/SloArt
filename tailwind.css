@@ -48,7 +48,7 @@ html {
      tab-size: 4;
      
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, "Neue Haas Unica W1G", BlinkMacSystemFont,  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, Neue Haas Unica W1G;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -65,6 +65,7 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  font-family: Neue Haas Unica W1G, sans-serif;
 }
 
 /*
