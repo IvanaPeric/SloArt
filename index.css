@@ -52,6 +52,10 @@
     letter-spacing: 1px;
 }
 
+.hover-img figcaption h3 {
+    line-height: 40px;
+}
+
 .hover-img:hover::before,
 .hover-img:hover::after {
     transform: scale(1);

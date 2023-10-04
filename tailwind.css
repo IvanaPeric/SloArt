@@ -106,6 +106,15 @@ h6 {
   font-weight: inherit;
 }
 
+.awards-list {
+  text-align: left;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
