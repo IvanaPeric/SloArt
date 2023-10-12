@@ -1,10 +1,9 @@
 .swiper-slide,
 .swiper-wrapper,
-swiper-slide {
-    max-height: 600px;
+.swiper-slide {
+    height: 100%;
     position: relative;
     transition-property: transform;
-    max-width: 800px;
 }
 
 .swiper-fade.swiper-free-mode .swiper-slide,
