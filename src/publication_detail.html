@@ -11,104 +11,83 @@
   </head>
 
   <body>
-    <nav class="bg-white fixed top-0 w-full z-10">
-      <div
-        class="max-w-[1540px] flex h-[80px] items-center justify-between mx-auto p-4"
-      >
-        <a href="#">
-          <img
-            src="../public/images/glob/primary.svg"
-            class="h-6 mr-3"
-            alt="Logo"
-          />
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <img
-            class="icon-open"
-            style="height: 16px"
-            src="../public/icons/menu.svg"
-            alt=""
-          />
+    <nav class="bg-white fixed top-0 w-full px-4 z-10">
+      <div class="max-w-screen-xl flex h-[80px] items-center justify-between mx-auto">
+        <div>
+          <a href="#">
+            <img src="../public/images/glob/primary.svg" class="h-6 mr-3" alt="Logo" />
+          </a>
+        </div>
+        <button type="button" class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
+          aria-controls="navbar-default" aria-expanded="false">
+          <img class="h-4" src="../public/icons/menu.svg" alt="" />
         </button>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <img style="height: 20px" src="../public/icons/close.svg" alt="" />
+        <button type="button" class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
+          aria-controls="navbar-default" aria-expanded="false">
+          <img class="h-6" src="../public/icons/close.svg" alt="" />
         </button>
         <div
-          class="navbar h-full-nav lg:static lg:block hidden h-full fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
-          id="navbar-default"
-        >
+          class="navbar h-full-nav lg:static lg:block hidden sm:h-auto h-[calc(100%-80px)] bg-white fixed top-20 left-0 z-10 lg:w-auto w-full"
+          id="navbar-default">
           <ul
-            style="height: calc(100% - 80px)"
-            class="font-medium lg:text-base text-lg flex flex-col lg:p-0 p-5 sm:justify-none justify-between lg:flex-row lg:space-x-6 md:mt-0 md:border-0"
-          >
+            class="font-light lg:text-base text-xl flex flex-col h-full justify-between lg:p-0 p-5 lg:flex-row lg:space-x-6">
             <li>
-              <a
-                href="./artists.html"
-                class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
-                aria-current="page"
-                >Artists</a
-              >
+              <a href="./artists.html" class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
+                aria-current="page">Artists</a>
             </li>
             <li>
-              <a
-                href="./src/home.html"
-                class="block py-2 rounded text-clr_monochrome_dark"
-                >Exhibitions</a
-              >
+              <a href="./src/home.html" class="block py-2 rounded text-clr_monochrome_dark">Exhibitions</a>
             </li>
             <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >Art fairs</a
-              >
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark">Art fairs</a>
             </li>
             <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >Publications</a
-              >
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark">Publications</a>
             </li>
             <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >News</a
-              >
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark">News</a>
             </li>
             <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >About us</a
-              >
+              <a href="#" class="block py-2 rounded text-clr_monochrome_dark">About us</a>
             </li>
-
-            <li>
-              <select
-                class="text-gray-900 block lg:text-base text-lg"
-                style="outline: none; border: 0"
-              >
-                <option value="CA">SL</option>
-                <option value="CA">GE</option>
-                <option value="CA">EN</option>
-              </select>
+  
+            <li class="flex items-center">
+              <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <a href="#" data-dropdown-toggle="language-dropdown-menu"
+                  class="inline-flex items-center font-medium justify-center px-4 py-2 sm:text-sm text-xl text-mn_dark rounded-lg cursor-pointer hover:bg-gray-100">
+                  SL
+                </a>
+                <!-- Dropdown -->
+                <div class="z-50 hidden my-4 sm:text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
+                  id="language-dropdown-menu">
+                  <ul class="py-2 font-medium" role="none">
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-mn_dark hover:bg-gray-100" role="menuitem">
+                        <div class="inline-flex sm:text-base text-xl items-center">
+                          Slovenia
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-mn_dark hover:bg-gray-100" role="menuitem">
+                        <div class="inline-flex sm:text-base text-xl items-center">
+                          English
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <main class="py-20">
-      <section>
+    <main class="py-10 px-4">
+      <section class="max-w-screen-xl mx-auto">
         <div
-          class="grid lx:grid-cols-2 justify-items-stretch max-w-[1540px] gap-10 p-4 m-auto"
+          class="grid sm:grid-cols-2 justify-items-stretch gap-10 m-auto"
         >
           <div class="flex flex-col w-full">
             <div class="h-full flex flex-col justify-center">
@@ -132,9 +111,9 @@
         </div>
       </section>
 
-      <section>
+      <section class="max-w-screen-xl mx-auto py-10">
         <div
-          class="grid md:grid-cols-3 justify-items-between max-w-[1540px] gap-10 p-4 m-auto"
+          class="grid md:grid-cols-3 justify-items-between gap-10 m-auto"
         >
           <div class="flex md:col-span-2 flex-col w-full">
             <p class="text-base py-5">
@@ -194,19 +173,13 @@
       </section>
     </main>
     <footer>
-      <div
-        class="mx-auto border-t-2 border-clr_primary border-opacity-20 w-full max-w-[1540px] p-4"
-      >
-        <div class="md:flex py-4 md:justify-between">
+      <div style="border-color: #e5e5e5;" class="mx-auto border-t-2 p-4 max-w-screen-xl">
+        <div class="grid sm:grid-cols-2 grid-cols-1 gap-8 md:justify-between py-4">
           <div class="w-full">
             <a href="#">
-              <img
-                src="../public/images/glob/primary.svg"
-                class="h-6"
-                alt="Logo"
-              />
+              <img src="../public/images/glob/primary.svg" class="h-6" alt="Logo" />
             </a>
-            <div class="grid grid-cols-2 gap-8 py-5 sm:gap-6 lg:grid-cols-3">
+            <div class="grid grid-cols-2 py-5 lg:grid-cols-3">
               <div>
                 <ul class="font-medium space-y-2">
                   <li>
@@ -219,25 +192,13 @@
                     <a href="https://tailwindcss.com/">Slovenija</a>
                   </li>
                   <li>
-                    <div
-                      class="grid md:grid-cols-2 items-center justify-between grid-cols-1 max-w-[1540px] py-4 m-auto"
-                    >
-                      <div
-                        class="flex w-full space-x-6 items-center text-lg sm:mt-0"
-                      >
+                    <div class="grid md:grid-cols-2 items-center justify-between grid-cols-1 max-w-[1540px] py-4 m-auto">
+                      <div class="flex w-full space-x-6 items-center text-lg sm:mt-0">
                         <a href="#" class="text-black">
-                          <img
-                            class="w-[20px]"
-                            src="../public/icons/footer/facebook.svg"
-                            alt="mail"
-                          />
+                          <img class="w-[20px]" src="../public/icons/footer/facebook.svg" alt="mail" />
                         </a>
                         <a href="#" class="text-black">
-                          <img
-                            class="w-[20px]"
-                            src="../public/icons/footer/Instagram.svg"
-                            alt="mail"
-                          />
+                          <img class="w-[20px]" src="../public/icons/footer/Instagram.svg" alt="mail" />
                         </a>
                       </div>
                     </div>
@@ -250,46 +211,32 @@
                     <a href="https://flowbite.com/">info@galerijay.si</a>
                   </li>
                   <li>
-                    <a href="https://tailwindcss.com/"
-                      >01 429 33 17 / 070 852 462</a
-                    >
+                    <a href="https://tailwindcss.com/">01 429 33 17 / 070 852 462</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="w-full">
-            <div class="lg:w-2/3 w-full mx-auto">
+            <div class="lg:w-2/3 w-full ml-auto">
               <h1 class="text-xl font-light">Subsribe to our newsletter</h1>
               <form action="#" class="mx-auto">
-                <div
-                  class="items-center my-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
-                >
+                <div class="items-center my-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                   <div class="relative w-full">
-                    <input
+                    <input type="search" id="location-search"
                       class="block p-3 w-full text-base text-gray-900 bg-white border-2 border-gray-400"
-                      placeholder="Your email address"
-                      type="email"
-                      id="email"
-                      required=""
-                    />
-                  </div>
-                  <div>
-                    <button
-                      type="submit"
-                      class="nowrap py-4 px-5 w-full text-base font-medium text-center bg-black text-white"
-                    >
-                      Naročite si
+                      style="outline: none;" placeholder="Your email address" required />
+                    <button type="submit"
+                      class="absolute top-0 end-0 h-full px-5 py-2.5 text-sm font-medium bg-black text-white">
+                      <span class="uppercase">subscribe</span>
                     </button>
                   </div>
                 </div>
-                <div
-                  class="mx-auto flex space-x-2 items-center text-base text-left"
-                >
-                  <input
-                    class="focus:border-transparent checked:bg-black focus:ring-0"
-                    type="checkbox"
-                  />
+                <div class="mx-auto flex space-x-2 items-center text-base text-left">
+                  <div class="flex items-center">
+                    <input checked id="teal-checkbox" type="checkbox" value=""
+                      class="w-4 h-4 text-white bg-black border-gray-300 rounded focus:ring-black focus:ring-2">
+                  </div>
                   <p class="text-sm">
                     I'd like to receive occasional emails. See our
                     <b>PRIVACY POLICY</b>

@@ -5,21 +5,23 @@ const closeNav = document.querySelector('.icon-close');
 const exhibitions = document.querySelectorAll('.exhibition');
 const signs = document.querySelectorAll('.sign-exhibition');
 
-localStorage.theme = 'light'
+localStorage.theme = 'light';
 
 openNav.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    navbar.classList.remove('hidden');
     openNav.classList.add('hidden');
     closeNav.classList.remove('hidden');
-    navbar.classList.toggle('hidden');
 })
 
 closeNav.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    navbar.classList.add('hidden');
     openNav.classList.remove('hidden');
     closeNav.classList.add('hidden');
-    navbar.classList.toggle('hidden');
 })
+
+
 
 exhibitions.forEach((exhibition, index) => {
     exhibition.addEventListener('click', (e) => {

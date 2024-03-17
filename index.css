@@ -108,6 +108,9 @@
     height: 0px;
     display: none;
 }
+.bio-content {
+    text-align: justify;
+}
 
 
 .active+div {
