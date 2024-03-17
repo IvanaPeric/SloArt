@@ -30,3 +30,8 @@ exhibitions.forEach((exhibition, index) => {
         signs[index].src = active ? "../public/icons/tina-minus.svg" : "../public/icons/tina-plus.svg"
     })
 })
+
+// For Live Projects
+window.addEventListener('load', function () {
+    document.querySelector('body').classList.add("loaded")
+});

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../swipper.css" />
   <link href="../tailwind.css" rel="stylesheet" />
   <link href="../index.css" rel="stylesheet" />
+  <link href="../loader.css" rel="stylesheet" />
   <title>Tina Dobrajc</title>
 </head>
 
@@ -247,7 +248,7 @@
       </div>
       <div class="py-10">
         <div>
-          <h1 class="text-2xl max-w-[450px] py-10 font-light">Razstave</h1>
+          <h1 class="text-2xl text-left max-w-[450px] py-10 font-light">Razstave</h1>
         </div>
         <div class="grid md:grid-cols-2 grid-cols-1 gap-10">
           <div class="flex flex-col">
@@ -256,7 +257,7 @@
               <img class="w-[35px] sign-exhibition" src="../public/icons/tina-plus.svg" />
               Solo exhibitions
             </a>
-            <div>
+            <div style="padding-left: 50px;">
               <div class="md:flex hidden gap-10 py-3">
                 <p style="width: 100px">2022</p>
                 <div class="flex flex-col space-y-2">
@@ -400,7 +401,7 @@
               <img class="w-[35px] sign-exhibition" src="../public/icons/tina-plus.svg" />
               Group exhibitions
             </a>
-            <div>
+            <div style="padding-left: 50px;">
               <div class="md:flex hidden gap-10 py-3">
                 <p style="width: 100px">2022</p>
                 <div class="flex flex-col space-y-2">
@@ -746,9 +747,18 @@
     </div>
   </footer>
 
+  <div class="loader-wrapper">
+    <div class="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
   <script src="../main.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>

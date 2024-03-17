@@ -1,311 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/uzi4nhr.css" />
-    <link href="../tailwind.css" rel="stylesheet" />
-    <title>Miha</title>
-  </head>
 
-  <body>
-    <nav class="bg-white fixed top-0 w-full z-10">
-      <div
-        class="max-w-[1540px] flex h-[80px] items-center justify-between mx-auto p-4"
-      >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.typekit.net/uzi4nhr.css" />
+  <link href="../tailwind.css" rel="stylesheet" />
+  <title>Miha</title>
+</head>
+
+<body>
+  <nav class="bg-white fixed top-0 w-full px-4 z-10">
+    <div class="max-w-screen-xl flex h-[80px] items-center justify-between mx-auto">
+      <div>
         <a href="#">
-          <img
-            src="../public/images/glob/primary.svg"
-            class="h-6 mr-3"
-            alt="Logo"
-          />
+          <img src="../public/images/glob/primary.svg" class="h-6 mr-3" alt="Logo" />
         </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <img
-            class="icon-open"
-            style="height: 16px"
-            src="../public/icons/menu.svg"
-            alt=""
-          />
-        </button>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <img style="height: 20px" src="../public/icons/close.svg" alt="" />
-        </button>
-        <div
-          class="navbar h-full-nav lg:static lg:block hidden h-full fixed top-20 bg-white left-0 z-10 lg:w-auto w-full"
-          id="navbar-default"
-        >
-          <ul
-            style="height: calc(100% - 80px)"
-            class="font-medium lg:text-base text-lg flex flex-col lg:p-0 p-5 sm:justify-none justify-between lg:flex-row lg:space-x-6 md:mt-0 md:border-0"
-          >
-            <li>
-              <a
-                href="./artists.html"
-                class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
-                aria-current="page"
-                >Artists</a
-              >
-            </li>
-            <li>
-              <a
-                href="./src/home.html"
-                class="block py-2 rounded text-clr_monochrome_dark"
-                >Exhibitions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >Art fairs</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >Publications</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >News</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block py-2 rounded text-clr_monochrome_dark"
-                >About us</a
-              >
-            </li>
-
-            <li>
-              <select
-                class="text-gray-900 block lg:text-base text-lg"
-                style="outline: none; border: 0"
-              >
-                <option value="CA">SL</option>
-                <option value="CA">GE</option>
-                <option value="CA">EN</option>
-              </select>
-            </li>
-            <li></li>
-          </ul>
-        </div>
       </div>
-    </nav>
-
-    <main class="py-20">
-      <section>
-        <div
-          class="grid lx:grid-cols-2 grid-cols-1 max-w-[1540px] gap-10 p-4 m-auto"
-        >
-          <div class="flex flex-col w-full">
-            <div class="h-full flex items-center">
-              <h1
-                class="text-2xl awards-list py-10 text-clr_primary font-light"
-              >
-                Miha Štrukelj
-              </h1>
-            </div>
-            <div class="lx:flex hidden md:gap-20 gap-0">
-              <ul class="text-base space-y-2 text-clr_monochrome_dark"></ul>
-              <p class="text-base">
-                Miha Štrukelj, rojen 1973 v Ljubljani, je slikar, ki raziskuje
-                proces in meje slikanja ter se osredotoča na urbana okolja in
-                njihovo percepcijo. Pred kratkim je prejel dve nagradi: delovno
-                štipendijo fundacije Pollock-Krasner (Pollock-Krasner Grant
-                2008-09) in nagrado za risbo Henkel Drawing Award 2008. Uvrščen
-                je bil v pregledno razstavo 'Slovenska umetnost 1995–2005' in
-                'Sedem grehov: Ljubljana–Moskva' v Moderni galeriji v Ljubljani
-                in sodeloval na številnih razstavah doma in v tujini. Njegovo
-                delo je bilo predstavljeno v knjigi Vitamin P: New Perspectives
-                in Painting (založba Phaidon).
-              </p>
-            </div>
-          </div>
-          <div class="flex sm:justify-end justify-center">
-            <img
-              class="w-full"
-              src="../public/images/miha/Tina-Dobrajc-Divide-Et-Impera.svg"
-              alt="/"
-              style="max-width: 500px"
-            />
-          </div>
-          <div class="lx:hidden flex flex-col gap-10">
-            <p class="text-base py-5">
-              Slikarska dela akademske slikarke Tine Dobrajc odlikuje
-              svojevrstna prepoznavna ikonografija, kjer umetnica prepleta
-              tradicijo s sodobnostjo, pri čimer se navdihuje zlasti v slovenski
-              folklorni zapuščini in mitologiji na eni strani ter v množični
-              kulturi in filmu na drugi strani. V delih Dobrajčeva pogosto
-              raziskuje, prevprašuje in na-novo definira zlasti položaj ženske v
-              sodobni (slovenski) družbi. Večinoma ustvarja (večja) slikarska
-              dela, deluje pa tudi na področju ilustracije in gledališke
-              scenografije.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="md:py-20 py-0">
-        <div class="max-w-[1540px] grid lg:grid-cols-2 grid-cols-1 p-4 m-auto">
-          <div class="w-full text-left">
-            <p class="text-2xl font-light awards-list py-10">
-              Y gallery exhibitions
-            </p>
-          </div>
-          <div
-            class="grid lg:grid-cols-2 grid-cols-1 justify-between gap-8 w-full"
-          >
-            <a href="/razstava-marko-jakse-druga-runda">
-              <img
-                class="w-full"
-                src="https://www.sloart.si//Content/pimg/M_marko-jakse-druga-runda-cbdcb287-5da0-4870-bc2f-6190396e9b09.jpg"
-                alt="Marko Jakše - DRUGA RUNDA"
-                title="Marko Jakše - DRUGA RUNDA"
-              />
-              <p class="pt-3 text-base text-clr_primary font-semibold">
-                Marko Jakše - DRUGA RUNDA
-              </p>
-              <p>Galerija SLOART, Ljubljana</p>
-              <p class="pt-5">22 april — 28 maj, 2021</p>
-            </a>
-            <a href="/razstava-marko-jakse-na-otoku-nigga">
-              <img
-                class="w-full"
-                src="https://www.sloart.si//Content/pimg/M_marko-jakse-na-otoku-niga-bd6c44af-e2de-44c1-95f2-c1dbe92d5875.jpg"
-                alt="Marko Jakše - NA OTOKU NIGA"
-                title="Marko Jakše - NA OTOKU NIGA"
-              />
-              <p class="pt-3 text-base text-clr_primary font-semibold">
-                Marko Jakše - NA OTOKU NIGA
-              </p>
-              <p>Galerija Y, Ljubljana</p>
-              <p class="pt-5">11 marec — 19 april, 2021</p>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
+      <button type="button" class="icon-open items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden"
+        aria-controls="navbar-default" aria-expanded="false">
+        <img class="h-4" src="../public/icons/menu.svg" alt="" />
+      </button>
+      <button type="button" class="icon-close hidden items-center p-2 ml-3 text-sm text-gray-500 rounded-lg"
+        aria-controls="navbar-default" aria-expanded="false">
+        <img class="h-6" src="../public/icons/close.svg" alt="" />
+      </button>
       <div
-        class="mx-auto border-t-2 border-clr_primary border-opacity-20 w-full max-w-[1540px] p-4"
-      >
-        <div class="md:flex py-4 md:justify-between">
-          <div class="w-full">
-            <a href="#">
-              <img
-                src="../public/images/glob/primary.svg"
-                class="h-6"
-                alt="Logo"
-              />
-            </a>
-            <div class="grid grid-cols-2 gap-8 py-5 sm:gap-6 lg:grid-cols-3">
-              <div>
-                <ul class="font-medium space-y-2">
+        class="navbar h-full-nav lg:static lg:block hidden sm:h-auto h-[calc(100%-80px)] bg-white fixed top-20 left-0 z-10 lg:w-auto w-full"
+        id="navbar-default">
+        <ul
+          class="font-light lg:text-base text-xl flex flex-col h-full justify-between lg:p-0 p-5 lg:flex-row lg:space-x-6">
+          <li>
+            <a href="./artists.html" class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
+              aria-current="page">Artists</a>
+          </li>
+          <li>
+            <a href="./src/home.html" class="block py-2 rounded text-clr_monochrome_dark">Exhibitions</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">Art fairs</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">Publications</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">News</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">About us</a>
+          </li>
+
+          <li class="flex items-center">
+            <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+              <a href="#" data-dropdown-toggle="language-dropdown-menu"
+                class="inline-flex items-center font-medium justify-center px-4 py-2 sm:text-sm text-xl text-mn_dark rounded-lg cursor-pointer hover:bg-gray-100">
+                SL
+              </a>
+              <!-- Dropdown -->
+              <div class="z-50 hidden my-4 sm:text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
+                id="language-dropdown-menu">
+                <ul class="py-2 font-medium" role="none">
                   <li>
-                    <a href="https://flowbite.com/">Trubarjeva 79</a>
-                  </li>
-                  <li>
-                    <a href="https://tailwindcss.com/">1000 Ljubljana</a>
-                  </li>
-                  <li>
-                    <a href="https://tailwindcss.com/">Slovenija</a>
-                  </li>
-                  <li>
-                    <div
-                      class="grid md:grid-cols-2 items-center justify-between grid-cols-1 max-w-[1540px] py-4 m-auto"
-                    >
-                      <div
-                        class="flex w-full space-x-6 items-center text-lg sm:mt-0"
-                      >
-                        <a href="#" class="text-black">
-                          <img
-                            class="w-[20px]"
-                            src="../public/icons/footer/facebook.svg"
-                            alt="mail"
-                          />
-                        </a>
-                        <a href="#" class="text-black">
-                          <img
-                            class="w-[20px]"
-                            src="../public/icons/footer/Instagram.svg"
-                            alt="mail"
-                          />
-                        </a>
+                    <a href="#" class="block px-4 py-2 text-sm text-mn_dark hover:bg-gray-100" role="menuitem">
+                      <div class="inline-flex sm:text-base text-xl items-center">
+                        Slovenia
                       </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul class="font-medium space-y-2">
-                  <li>
-                    <a href="https://flowbite.com/">info@galerijay.si</a>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://tailwindcss.com/"
-                      >01 429 33 17 / 070 852 462</a
-                    >
+                    <a href="#" class="block px-4 py-2 text-sm text-mn_dark hover:bg-gray-100" role="menuitem">
+                      <div class="inline-flex sm:text-base text-xl items-center">
+                        English
+                      </div>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="max-w-screen-xl px-4 py-10 mx-auto">
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-10">
+        <div class="flex flex-col justify-center w-full">
+          <div class="flex items-center">
+            <h1 class="text-2xl awards-list text-mn_dark font-light">
+              Miha Štrukelj
+            </h1>
           </div>
-          <div class="w-full">
-            <div class="lg:w-2/3 w-full mx-auto">
-              <h1 class="text-xl font-light">Subsribe to our newsletter</h1>
-              <form action="#" class="mx-auto">
-                <div
-                  class="items-center my-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
-                >
-                  <div class="relative w-full">
-                    <input
-                      class="block p-3 w-full text-base text-gray-900 bg-white border-2 border-gray-400"
-                      placeholder="Your email address"
-                      type="email"
-                      id="email"
-                      required=""
-                    />
+          <div class="md:flex hidden md:gap-20 pt-5 gap-0">
+            <ul class="text-base space-y-2 text-clr_monochrome_dark"></ul>
+            <p class="text-base">
+              Miha Štrukelj, rojen 1973 v Ljubljani, je slikar, ki raziskuje
+              proces in meje slikanja ter se osredotoča na urbana okolja in
+              njihovo percepcijo. Pred kratkim je prejel dve nagradi: delovno
+              štipendijo fundacije Pollock-Krasner (Pollock-Krasner Grant
+              2008-09) in nagrado za risbo Henkel Drawing Award 2008. Uvrščen
+              je bil v pregledno razstavo 'Slovenska umetnost 1995–2005' in
+              'Sedem grehov: Ljubljana–Moskva' v Moderni galeriji v Ljubljani
+              in sodeloval na številnih razstavah doma in v tujini. Njegovo
+              delo je bilo predstavljeno v knjigi Vitamin P: New Perspectives
+              in Painting (založba Phaidon).
+            </p>
+          </div>
+        </div>
+        <div class="flex sm:justify-end justify-center">
+          <img class="w-full" src="../public/images/miha/Tina-Dobrajc-Divide-Et-Impera.svg" alt="/"/>
+        </div>
+        <div class="md:hidden flex flex-col">
+          <p class="text-base">
+            Slikarska dela akademske slikarke Tine Dobrajc odlikuje
+            svojevrstna prepoznavna ikonografija, kjer umetnica prepleta
+            tradicijo s sodobnostjo, pri čimer se navdihuje zlasti v slovenski
+            folklorni zapuščini in mitologiji na eni strani ter v množični
+            kulturi in filmu na drugi strani. V delih Dobrajčeva pogosto
+            raziskuje, prevprašuje in na-novo definira zlasti položaj ženske v
+            sodobni (slovenski) družbi. Večinoma ustvarja (večja) slikarska
+            dela, deluje pa tudi na področju ilustracije in gledališke
+            scenografije.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-screen-xl px-4 py-10 mx-auto">
+      <div class="grid lg:grid-cols-2 grid-cols-1 m-auto">
+        <div class="w-full text-left">
+          <p class="text-2xl font-light awards-list py-10">
+            Y gallery exhibitions
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 grid-cols-1 justify-between gap-8 w-full">
+          <a href="/razstava-marko-jakse-druga-runda">
+            <img class="w-full"
+              src="https://www.sloart.si//Content/pimg/M_marko-jakse-druga-runda-cbdcb287-5da0-4870-bc2f-6190396e9b09.jpg"
+              alt="Marko Jakše - DRUGA RUNDA" title="Marko Jakše - DRUGA RUNDA" />
+            <p class="pt-3 text-base text-clr_primary font-semibold">
+              Marko Jakše - DRUGA RUNDA
+            </p>
+            <p>Galerija SLOART, Ljubljana</p>
+            <p class="pt-5">22 april — 28 maj, 2021</p>
+          </a>
+          <a href="/razstava-marko-jakse-na-otoku-nigga">
+            <img class="w-full"
+              src="https://www.sloart.si//Content/pimg/M_marko-jakse-na-otoku-niga-bd6c44af-e2de-44c1-95f2-c1dbe92d5875.jpg"
+              alt="Marko Jakše - NA OTOKU NIGA" title="Marko Jakše - NA OTOKU NIGA" />
+            <p class="pt-3 text-base text-clr_primary font-semibold">
+              Marko Jakše - NA OTOKU NIGA
+            </p>
+            <p>Galerija Y, Ljubljana</p>
+            <p class="pt-5">11 marec — 19 april, 2021</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div style="border-color: #e5e5e5;" class="mx-auto border-t-2 p-4 max-w-screen-xl">
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-8 md:justify-between py-4">
+        <div class="w-full">
+          <a href="#">
+            <img src="../public/images/glob/primary.svg" class="h-6" alt="Logo" />
+          </a>
+          <div class="grid grid-cols-2 py-5 lg:grid-cols-3">
+            <div>
+              <ul class="font-medium space-y-2">
+                <li>
+                  <a href="https://flowbite.com/">Trubarjeva 79</a>
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/">1000 Ljubljana</a>
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/">Slovenija</a>
+                </li>
+                <li>
+                  <div class="grid md:grid-cols-2 items-center justify-between grid-cols-1 max-w-[1540px] py-4 m-auto">
+                    <div class="flex w-full space-x-6 items-center text-lg sm:mt-0">
+                      <a href="#" class="text-black">
+                        <img class="w-[20px]" src="../public/icons/footer/facebook.svg" alt="mail" />
+                      </a>
+                      <a href="#" class="text-black">
+                        <img class="w-[20px]" src="../public/icons/footer/Instagram.svg" alt="mail" />
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <button
-                      type="submit"
-                      class="nowrap py-4 px-5 w-full text-base font-medium text-center bg-black text-white"
-                    >
-                      Naročite si
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="mx-auto flex space-x-2 items-center text-base text-left"
-                >
-                  <input
-                    class="focus:border-transparent checked:bg-black focus:ring-0"
-                    type="checkbox"
-                  />
-                  <p class="text-sm">
-                    I'd like to receive occasional emails. See our
-                    <b>PRIVACY POLICY</b>
-                  </p>
-                </div>
-              </form>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="font-medium space-y-2">
+                <li>
+                  <a href="https://flowbite.com/">info@galerijay.si</a>
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/">01 429 33 17 / 070 852 462</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+        <div class="w-full">
+          <div class="lg:w-2/3 w-full ml-auto">
+            <h1 class="text-xl font-light">Subsribe to our newsletter</h1>
+            <form action="#" class="mx-auto">
+              <div class="items-center my-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                <div class="relative w-full">
+                  <input type="search" id="location-search"
+                    class="block p-3 w-full text-base text-gray-900 bg-white border-2 border-gray-400"
+                    style="outline: none;" placeholder="Your email address" required />
+                  <button type="submit"
+                    class="absolute top-0 end-0 h-full px-5 py-2.5 text-sm font-medium bg-black text-white">
+                    <span class="uppercase">subscribe</span>
+                  </button>
+                </div>
+              </div>
+              <div class="mx-auto flex space-x-2 items-center text-base text-left">
+                <div class="flex items-center">
+                  <input checked id="teal-checkbox" type="checkbox" value=""
+                    class="w-4 h-4 text-white bg-black border-gray-300 rounded focus:ring-black focus:ring-2">
+                </div>
+                <p class="text-sm">
+                  I'd like to receive occasional emails. See our
+                  <b>PRIVACY POLICY</b>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="../main.js"></script>
-  </body>
+ 
+  <div class="loader-wrapper">
+    <div class="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <script src="../main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
 </html>
