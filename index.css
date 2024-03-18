@@ -123,3 +123,14 @@
     display: block;
     transition: max-height 0.25s ease-out;
 }
+
+.add-shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px 0px;
+}
+
+@media only screen and (max-width: 300px) {
+    .text-2xl {
+        font-size: 32px;
+    }
+  }
+  

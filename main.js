@@ -21,8 +21,6 @@ closeNav.addEventListener('click', (e) => {
     closeNav.classList.add('hidden');
 })
 
-
-
 exhibitions.forEach((exhibition, index) => {
     exhibition.addEventListener('click', (e) => {
         exhibition.classList.toggle('active');
@@ -35,3 +33,13 @@ exhibitions.forEach((exhibition, index) => {
 window.addEventListener('load', function () {
     document.querySelector('body').classList.add("loaded")
 });
+
+document.addEventListener('scroll', (e) => {
+    const nav = document.querySelector('nav');
+    console.log(nav)
+    if(window.pageYOffset>0){
+      nav.classList.add("add-shadow");
+    }else{
+      nav.classList.remove("add-shadow");
+    }
+})

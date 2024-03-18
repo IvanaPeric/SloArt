@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.typekit.net/uzi4nhr.css" />
+  <link rel="stylesheet" href="../swipper.css" />
   <link href="../tailwind.css" rel="stylesheet" />
+  <link href="../index.css" rel="stylesheet" />
+  <link href="../loader.css" rel="stylesheet" />
   <title>Arists</title>
 </head>
 
@@ -27,50 +29,49 @@
         <img class="h-6" src="../public/icons/close.svg" alt="" />
       </button>
       <div
-        class="navbar h-full-nav lg:static lg:block hidden sm:h-auto h-[calc(100%-80px)] bg-white fixed top-20 left-0 z-10 lg:w-auto w-full"
+        class="navbar h-full-nav lg:static lg:block hidden lg:h-auto h-[calc(100%-80px)] bg-white fixed top-20 left-0 z-10 lg:w-auto w-full"
         id="navbar-default">
         <ul
           class="font-light lg:text-base text-xl flex flex-col h-full justify-between lg:p-0 p-5 lg:flex-row lg:space-x-6">
           <li>
-            <a href="./artists.html" class="block py-2 text-clr_monochrome_dark rounded md:bg-transparent"
-              aria-current="page">Artists</a>
+            <a href="./artists.html" class="block py-2 rounded md:bg-transparent" aria-current="page">Artists</a>
           </li>
           <li>
-            <a href="./src/home.html" class="block py-2 rounded text-clr_monochrome_dark">Exhibitions</a>
+            <a href="./src/home.html" class="block py-2 rounded">Exhibitions</a>
           </li>
           <li>
-            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">Art fairs</a>
+            <a href="#" class="block py-2 rounded">Art fairs</a>
           </li>
           <li>
-            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">Publications</a>
+            <a href="#" class="block py-2 rounded">Publications</a>
           </li>
           <li>
-            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">News</a>
+            <a href="#" class="block py-2 rounded">News</a>
           </li>
           <li>
-            <a href="#" class="block py-2 rounded text-clr_monochrome_dark">About us</a>
+            <a href="#" class="block py-2 rounded">About us</a>
           </li>
 
           <li class="flex items-center">
             <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
               <a href="#" data-dropdown-toggle="language-dropdown-menu"
-                class="inline-flex items-center font-medium justify-center px-4 py-2 sm:text-sm text-xl text-mn_dark rounded-lg cursor-pointer hover:bg-gray-100">
+                class="inline-flex items-center font-light justify-center px-4 py-2 lg:text-sm text-xl rounded-lg cursor-pointer hover:bg-gray-100">
                 SL
               </a>
               <!-- Dropdown -->
-              <div class="z-50 hidden my-4 sm:text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
+              <div class="z-50 hidden my-4 list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
                 id="language-dropdown-menu">
-                <ul class="py-2 font-medium" role="none">
+                <ul class="py-2 font-light lg:text-base text-xl" role="none">
                   <li>
-                    <a href="#" class="block px-4 py-2 text-sm text-mn_dark hover:bg-gray-100" role="menuitem">
-                      <div class="inline-flex sm:text-base text-xl items-center">
+                    <a href="#" class="block px-4 py-2" role="menuitem">
+                      <div class="inline-flex items-center">
                         Slovenia
                       </div>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2 text-sm text-mn_dark hover:bg-gray-100" role="menuitem">
-                      <div class="inline-flex sm:text-base text-xl items-center">
+                    <a href="#" class="block px-4 py-2" role="menuitem">
+                      <div class="inline-flex items-center">
                         English
                       </div>
                     </a>
@@ -200,7 +201,7 @@
           <div class="lg:w-2/3 w-full ml-auto">
             <h1 class="text-xl font-light">Subsribe to our newsletter</h1>
             <form action="#" class="mx-auto">
-              <div class="items-center my-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+              <div class="items-center my-3 space-y-4 max-w-screen-sm flex sm:space-y-0">
                 <div class="relative w-full">
                   <input type="search" id="location-search"
                     class="block p-3 w-full text-base text-gray-900 bg-white border-2 border-gray-400"
@@ -235,6 +236,8 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
   </div>
+
+
 
   <script src="../main.js"></script>
   <!-- Swiper JS -->

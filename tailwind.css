@@ -1363,6 +1363,14 @@ video {
     position: absolute;
   }
 
+  .lg\:text-sm {
+    font-size: 12px;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:block {
     display: block;
   }
