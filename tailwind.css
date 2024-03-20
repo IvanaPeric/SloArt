@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/31267e36af6f8dac65a56e78345e945e?family=Neue+Haas+Unica+W1G);
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -10,6 +11,8 @@
 *,
 ::before,
 ::after {
+  font-family: "Neue Haas Unica W1G";
+  
   box-sizing: border-box;
   /* 1 */
   border-width: 0;
